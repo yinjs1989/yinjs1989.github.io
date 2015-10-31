@@ -17,7 +17,7 @@
 <meta property="og:url" content="http://yoursite.com/2013/10/13/hdfs-datanode-timeout/index.html">
 <meta property="og:site_name" content="Jinsong's Blog">
 <meta property="og:description" content="datanode进程死亡或者网络故障造成datanode无法与namenode通信，namenode不会立即把该节点判定为死亡，要经过一段时间，这段时间暂称作超时时长。HDFS默认的超时时长为10分钟+30秒。如果定义超时时间为timeout，则超时时长的计算公式为：timeout = 2 * heartbeat.recheck.interval + 10 * dfs.heartbeat.inte">
-<meta property="og:updated_time" content="2015-10-31T08:19:55.000Z">
+<meta property="og:updated_time" content="2015-10-31T14:59:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hadoop datanode节点超时时间设置">
 <meta name="twitter:description" content="datanode进程死亡或者网络故障造成datanode无法与namenode通信，namenode不会立即把该节点判定为死亡，要经过一段时间，这段时间暂称作超时时长。HDFS默认的超时时长为10分钟+30秒。如果定义超时时间为timeout，则超时时长的计算公式为：timeout = 2 * heartbeat.recheck.interval + 10 * dfs.heartbeat.inte">
@@ -101,6 +101,11 @@
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/技术分享/">技术分享</a>
+</div>
+
 
   <div class="article-tags">
   
@@ -154,16 +159,21 @@
 <aside class="clearfix">
 
   
-<div class="github-card">
-<p class="asidetitle">Github 名片</p>
-<div class="github-card" data-github="yinjs1989" data-width="220" data-height="119" data-theme="medium">
-<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/学习笔记/" title="学习笔记">学习笔记<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/技术分享/" title="技术分享">技术分享<sup>4</sup></a></li>
+		  
+		
+		</ul>
 </div>
-  </div>
 
-
-
-  
 
   
 <div class="tagslist">
@@ -188,6 +198,16 @@
 		
 		</ul>
 </div>
+
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="yinjs1989" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
 
 
   <div class="linkslist">

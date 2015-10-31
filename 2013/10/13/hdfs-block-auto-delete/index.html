@@ -17,7 +17,7 @@
 <meta property="og:url" content="http://yoursite.com/2013/10/13/hdfs-block-auto-delete/index.html">
 <meta property="og:site_name" content="Jinsong's Blog">
 <meta property="og:description" content="在日常维护hadoop集群的过程中发现这样一种情况：某个节点由于网络故障或者DataNode进程死亡，被NameNode判定为死亡，HDFS马上自动开始数据块的容错拷贝；当该节点重新添加到集群中时，由于该节点上的数据其实并没有损坏，所以造成了HDFS上某些block的备份数超过了设定的备份数。通过观察发现，这些多余的数据块经过很长的一段时间才会被完全删除掉，那么这个时间取决于什么呢？该时间的长短跟">
-<meta property="og:updated_time" content="2015-10-31T08:16:14.000Z">
+<meta property="og:updated_time" content="2015-10-31T15:00:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HDFS冗余数据块的自动删除">
 <meta name="twitter:description" content="在日常维护hadoop集群的过程中发现这样一种情况：某个节点由于网络故障或者DataNode进程死亡，被NameNode判定为死亡，HDFS马上自动开始数据块的容错拷贝；当该节点重新添加到集群中时，由于该节点上的数据其实并没有损坏，所以造成了HDFS上某些block的备份数超过了设定的备份数。通过观察发现，这些多余的数据块经过很长的一段时间才会被完全删除掉，那么这个时间取决于什么呢？该时间的长短跟">
@@ -101,6 +101,11 @@
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/技术分享/">技术分享</a>
+</div>
+
 
   <div class="article-tags">
   
@@ -162,16 +167,21 @@
 <aside class="clearfix">
 
   
-<div class="github-card">
-<p class="asidetitle">Github 名片</p>
-<div class="github-card" data-github="yinjs1989" data-width="220" data-height="119" data-theme="medium">
-<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/学习笔记/" title="学习笔记">学习笔记<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/技术分享/" title="技术分享">技术分享<sup>4</sup></a></li>
+		  
+		
+		</ul>
 </div>
-  </div>
 
-
-
-  
 
   
 <div class="tagslist">
@@ -196,6 +206,16 @@
 		
 		</ul>
 </div>
+
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="yinjs1989" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
 
 
   <div class="linkslist">
