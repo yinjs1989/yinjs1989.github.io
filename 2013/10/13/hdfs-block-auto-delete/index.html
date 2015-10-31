@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>HDFS冗余数据块的自动删除 | 仙人洞</title>
+    <title>HDFS冗余数据块的自动删除 | Jinsong&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Jinsong Yin">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="HDFS冗余数据块的自动删除">
 <meta property="og:url" content="http://yoursite.com/2013/10/13/hdfs-block-auto-delete/index.html">
-<meta property="og:site_name" content="仙人洞">
+<meta property="og:site_name" content="Jinsong's Blog">
 <meta property="og:description" content="在日常维护hadoop集群的过程中发现这样一种情况：某个节点由于网络故障或者DataNode进程死亡，被NameNode判定为死亡，HDFS马上自动开始数据块的容错拷贝；当该节点重新添加到集群中时，由于该节点上的数据其实并没有损坏，所以造成了HDFS上某些block的备份数超过了设定的备份数。通过观察发现，这些多余的数据块经过很长的一段时间才会被完全删除掉，那么这个时间取决于什么呢？该时间的长短跟">
 <meta property="og:updated_time" content="2015-10-31T08:16:14.000Z">
 <meta name="twitter:card" content="summary">
@@ -38,8 +38,12 @@
       
 <div>
 		
+			<div id="imglogo">
+				<a href="/"><img src="/img/angry-bird.png" alt="Jinsong&#39;s Blog" title="Jinsong&#39;s Blog"/></a>
+			</div>
+			
 			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="仙人洞">仙人洞</a></h1>
+				<h1 class="site-name"><a href="/" title="Jinsong&#39;s Blog">Jinsong&#39;s Blog</a></h1>
 				<h2 class="blog-motto">暮色苍茫看劲松，乱云飞渡仍从容</h2>
 			</div>
 			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
@@ -109,7 +113,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2013/10/13/hdfs-block-auto-delete/" data-title="HDFS冗余数据块的自动删除 | 仙人洞" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2013/10/13/hdfs-block-auto-delete/" data-title="HDFS冗余数据块的自动删除 | Jinsong&#39;s Blog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
